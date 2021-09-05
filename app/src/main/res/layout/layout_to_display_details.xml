@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginStart="80dp"
+    android:backgroundTint="@color/purple_200"
+    android:background="@color/purple_500"
+    android:elevation="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:background="@color/teal_200"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"/>
+        <TextView
+            android:id="@+id/display_dob"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dob"/>
+        <TextView
+            android:id="@+id/display_age"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"/>
+        <TextView
+            android:id="@+id/display_email"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"/>
+        <TextView
+            android:id="@+id/display_mobile"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number"/>
+        <TextView
+            android:id="@+id/display_sex"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"/>
+        <TextView
+            android:id="@+id/display_communication"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preferred_way_of_communication"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/my_linear_layout"
+    android:backgroundTint="@color/purple_200"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/text_color"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="100dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:autofillHints="" />
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp">
+
+        <EditText
+            style="@style/text_color"
+            android:id="@+id/date_picker"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:onClick="openCalender"
+            android:hint="@string/select_dob"
+            android:layout_marginTop="5dp"
+            android:inputType="date" />
+
+         <TextView
+             style="@style/text_color"
+             android:id="@+id/age"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/age"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp">
+
+        <TextView
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mail"
+        style="@style/text_color"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/mobile_no"
+        style="@style/text_color"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+
+        android:autofillHints="" />
+    <TextView
+
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preferred_way_of_communication"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_gp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="140dp">
+
+        <RadioButton
+            android:id="@+id/radio_email"
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email1"/>
+        <RadioButton
+            android:id="@+id/radio_phone"
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"/>
+    </RadioGroup>
+
+    <LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="30dp">
+    <CheckBox
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_want_to_save_the_data"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="nextActivity"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
